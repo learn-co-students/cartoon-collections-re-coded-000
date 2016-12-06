@@ -13,14 +13,12 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  counter =0
 array.any? {|item| item.size >4}
 end
 
-def find_the_cheese(array)
+def find_the_cheese(cheese)
     cheese_types = ["cheddar", "gouda", "camembert"]
-  counter =0
-  if array.include?(cheese_types[counter])
-     cheese_types[counter]
-  end
+   cheese.find {|type|
+     cheese_types.include?(type)
+   }
 end
