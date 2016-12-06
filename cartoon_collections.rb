@@ -14,11 +14,7 @@ end
 
 def long_planeteer_calls(array)
   counter =0
-  if array[counter].size >4
-    true
-  else
-    false
-  end
+array.any? {|item| item.size >4}
 end
 
 def find_the_cheese(array)
